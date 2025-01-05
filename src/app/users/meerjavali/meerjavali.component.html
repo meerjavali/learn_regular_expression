@@ -1,0 +1,18 @@
+<div>
+    <p>{{Description}}</p>
+    <p>Regular expression used is {{syntax}} </p>
+    <form class="example-form" [formGroup]="meerjavaliForm">
+        <mat-form-field class="example-full-width" >
+          <mat-label>Enter Name</mat-label>
+          <input type="text" matInput formControlName="nameFormControl" 
+                 placeholder="E.g RAM">
+          <mat-error *ngIf="meerjavaliForm.get('nameFormControl')?.hasError('required')">
+            This Field can't be Empty
+          </mat-error>
+          <mat-error *ngIf="!meerjavaliForm.get('nameFormControl')?.hasError('required') && this.meerjavaliForm.get('nameFormControl')?.hasError('invalidInput')">
+            <strong>{{errorMessage}}</strong>
+          </mat-error>
+        </mat-form-field>
+      </form>  
+</div>
+  
