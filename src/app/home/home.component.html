@@ -10,11 +10,14 @@
     <p>step 6 write your validation service logic at at 'common/validation.service.ts'. </p>
     <p>step 7 write your custom messages at common enum file at 'common/static-message.ts'</p>
     <p>step 8 raise a pull request to main branch</p>
+    <p>After successful merge you can see your results at "regular-Exp.web.app/'your-github-profile-name'"</p>
+     <p> example my page
+       <a href="regular-Exp.web.app/meerjavali"> my page</a></p>
     <p></p>
     <p></p>
     <p></p>
 
-    <p>If you need any help i will be available at
+  <p> If you need any help i will be available at
         <a href="https://x.com/NaTuRe_lover99">Meer</a>
      </p>
 
