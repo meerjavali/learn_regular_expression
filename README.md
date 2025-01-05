@@ -12,7 +12,7 @@
     <p>step 8 raise a pull request to main branch</p>
     <p>After successful merge you can see your results at "regular-Exp.web.app/'your-github-profile-name'"</p>
      <p> example my page
-       <a href="regular-Exp.web.app/meerjavali"> my page</a></p>
+       <a href="https://regular-Exp.web.app/meerjavali"> my page</a></p>
     <p></p>
     <p></p>
     <p></p>
