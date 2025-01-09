@@ -15,4 +15,13 @@ export class ValidationService {
       return {invalidInput: true};
     }
   }
+  static onlyDigits(control: { value: string; }){
+    const reg = /^[0-9]{10}$/  
+    if(reg.test(control.value)){
+      return null;
+    }
+    else{
+      return {invalidInput: true};
+    }
+  }
 }
