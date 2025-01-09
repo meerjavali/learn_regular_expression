@@ -9,13 +9,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImsabiyaComponent } from './users/imsabiya/imsabiya.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MeerjavaliComponent,
-    HomeComponent
+    HomeComponent,
+    ImsabiyaComponent
   ],
   imports: [
     BrowserModule,

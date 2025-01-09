@@ -1,0 +1,23 @@
+<div>
+    <p>{{Description}}</p>
+    <p>Regular expression used is {{syntax}} </p>
+    <form class="example-form" [formGroup]="phoneNumForm">
+        <mat-form-field class="example-full-width">
+          <mat-label>Enter Phone Number</mat-label>
+          <input type="number" 
+                 matInput 
+                 formControlName="phoneNumFormControl" 
+                 placeholder="E.g 1234567891" pattern="[0-9]*"
+                 inputmode="numeric" maxLength=10>
+          <mat-error *ngIf="phoneNumForm.get('phoneNumFormControl')?.hasError('required')">
+            This Field can't be Empty
+          </mat-error>
+          <mat-error *ngIf="!phoneNumForm.get('phoneNumFormControl')?.hasError('required') && this.phoneNumForm.get('phoneNumFormControl')?.hasError('invalidInput')">
+            <strong>{{errorMessage}}</strong>
+          </mat-error>
+          <mat-error *ngIf="!phoneNumForm.get('phoneNumFormControl')?.hasError('required') && this.phoneNumForm.get('phoneNumFormControl')?.hasError('maxLength')">
+            <strong>{{errorMessage}}</strong>
+          </mat-error>
+        </mat-form-field>
+      </form>  
+</div>
